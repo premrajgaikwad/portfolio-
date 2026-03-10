@@ -1,0 +1,371 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: white;
+      color: darkslategray;
+      scroll-behavior: smooth;
+    }
+
+    /* ---- NAVBAR ---- */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 99;
+      background-color: white;
+      padding: 16px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 12px lightgray;
+    }
+    .nav-logo {
+      font-size: 22px;
+      font-weight: 800;
+      color: royalblue;
+    }
+    .nav-logo span { color: tomato; }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: darkslategray;
+      font-weight: 600;
+      font-size: 15px;
+    }
+    nav ul li a:hover { color: royalblue; }
+    .hire-btn {
+      background-color: royalblue;
+      color: white;
+      padding: 10px 22px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 14px;
+    }
+    .hire-btn:hover { background-color: mediumblue; }
+
+    /* ---- HERO ---- */
+    .hero {
+      background-color: aliceblue;
+      padding: 90px 50px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 50px;
+    }
+    .hero-left { max-width: 560px; }
+    .hero-left .hello {
+      font-size: 16px;
+      font-weight: 600;
+      color: royalblue;
+      margin-bottom: 10px;
+    }
+    .hero-left h1 {
+      font-size: 50px;
+      font-weight: 800;
+      line-height: 1.2;
+      margin-bottom: 10px;
+      color: darkslategray;
+    }
+    .hero-left h1 span { color: royalblue; }
+    .hero-left .role {
+      font-size: 20px;
+      font-weight: 600;
+      color: tomato;
+      margin-bottom: 18px;
+    }
+    .hero-left p {
+      font-size: 15px;
+      color: slategray;
+      line-height: 1.8;
+      margin-bottom: 30px;
+    }
+    .hero-btns { display: flex; gap: 14px; flex-wrap: wrap; }
+    .btn-main {
+      background-color: royalblue;
+      color: white;
+      padding: 13px 30px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 15px;
+    }
+    .btn-main:hover { background-color: mediumblue; }
+    .btn-outline {
+      background-color: white;
+      color: royalblue;
+      border: 2px solid royalblue;
+      padding: 13px 30px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 15px;
+    }
+    .btn-outline:hover { background-color: royalblue; color: white; }
+
+    /* Avatar */
+    .hero-right { text-align: center; }
+    .avatar-wrap {
+      width: 280px;
+      height: 280px;
+      border-radius: 50%;
+      background-color: royalblue;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 110px;
+      box-shadow: 0 12px 40px lightsteelblue;
+    }
+
+    /* Stats row */
+    .stats {
+      display: flex;
+      gap: 40px;
+      margin-top: 35px;
+      flex-wrap: wrap;
+    }
+    .stat .num {
+      font-size: 28px;
+      font-weight: 800;
+      color: royalblue;
+    }
+    .stat .lbl {
+      font-size: 13px;
+      color: slategray;
+    }
+
+    /* ---- ABOUT ---- */
+    .about {
+      padding: 80px 50px;
+      display: flex;
+      gap: 60px;
+      align-items: center;
+      background-color: white;
+    }
+    .about-img {
+      width: 340px;
+      height: 340px;
+      border-radius: 20px;
+      background-color: aliceblue;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 120px;
+      flex-shrink: 0;
+      border: 3px solid lightsteelblue;
+    }
+    .about-text h2 {
+      font-size: 32px;
+      font-weight: 800;
+      margin-bottom: 6px;
+    }
+    .about-text h2 span { color: royalblue; }
+    .about-text .line {
+      width: 50px;
+      height: 4px;
+      background-color: tomato;
+      border-radius: 4px;
+      margin-bottom: 20px;
+    }
+    .about-text p {
+      font-size: 15px;
+      color: slategray;
+      line-height: 1.8;
+      margin-bottom: 16px;
+    }
+    .about-info {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px 30px;
+      margin-top: 20px;
+    }
+    .about-info div {
+      font-size: 14px;
+      color: slategray;
+    }
+    .about-info div strong { color: darkslategray; }
+
+    /* ---- SKILLS ---- */
+    .skills {
+      padding: 80px 50px;
+      background-color: ghostwhite;
+      text-align: center;
+    }
+    .section-title {
+      font-size: 32px;
+      font-weight: 800;
+      margin-bottom: 6px;
+    }
+    .section-title span { color: royalblue; }
+    .title-line {
+      width: 50px;
+      height: 4px;
+      background-color: tomato;
+      border-radius: 4px;
+      margin: 0 auto 40px;
+    }
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      max-width: 860px;
+      margin: 0 auto;
+    }
+    .skill-card {
+      background-color: white;
+      border-radius: 16px;
+      padding: 24px 20px;
+      box-shadow: 0 3px 14px lightgray;
+      text-align: left;
+    }
+    .skill-card:hover { transform: translateY(-4px); box-shadow: 0 8px 24px lightsteelblue; }
+    .skill-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    .skill-name { font-weight: 700; font-size: 15px; }
+    .skill-pct { font-size: 13px; font-weight: 700; color: royalblue; }
+    .skill-bar {
+      background-color: lavender;
+      border-radius: 10px;
+      height: 8px;
+      overflow: hidden;
+    }
+    .skill-fill {
+      height: 100%;
+      background-color: royalblue;
+      border-radius: 10px;
+    }
+    .skill-icon { font-size: 28px; margin-bottom: 10px; }
+
+    /* ---- PROJECTS ---- */
+    .projects {
+      padding: 80px 50px;
+      background-color: white;
+      text-align: center;
+    }
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .project-card {
+      background-color: white;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 3px 14px lightgray;
+      text-align: left;
+    }
+    .project-card:hover { transform: translateY(-5px); box-shadow: 0 10px 28px lightsteelblue; }
+    .project-banner {
+      height: 130px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 52px;
+    }
+    .p1 { background-color: aliceblue; }
+    .p2 { background-color: lavenderblush; }
+    .p3 { background-color: mintcream; }
+    .p4 { background-color: lemonchiffon; }
+    .p5 { background-color: lavender; }
+    .p6 { background-color: mistyrose; }
+    .project-info { padding: 18px; }
+    .project-tag {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 3px 10px;
+      background-color: aliceblue;
+      color: royalblue;
+      border-radius: 20px;
+      margin-bottom: 8px;
+    }
+    .project-name {
+      font-size: 16px;
+      font-weight: 800;
+      margin-bottom: 6px;
+    }
+    .project-desc {
+      font-size: 13px;
+      color: slategray;
+      line-height: 1.6;
+      margin-bottom: 14px;
+    }
+    .project-links { display: flex; gap: 10px; }
+    .project-links a {
+      font-size: 12px;
+      font-weight: 700;
+      text-decoration: none;
+      padding: 6px 14px;
+      border-radius: 20px;
+    }
+    .link-live { background-color: royalblue; color: white; }
+    .link-code { background-color: ghostwhite; color: darkslategray; border: 1px solid lightgray; }
+    .link-live:hover { background-color: mediumblue; }
+    .link-code:hover { background-color: lightgray; }
+
+    /* ---- CONTACT ---- */
+    .contact {
+      padding: 80px 50px;
+      background-color: ghostwhite;
+      text-align: center;
+    }
+    .contact-box {
+      background-color: white;
+      border-radius: 20px;
+      padding: 50px;
+      max-width: 600px;
+      margin: 0 auto;
+      box-shadow: 0 4px 20px lightgray;
+    }
+    .contact-box p {
+      color: slategray;
+      font-size: 15px;
+      margin-bottom: 30px;
+      line-height: 1.7;
+    }
+    .contact-info { display: flex; flex-direction: column; gap: 14px; margin-bottom: 28px; }
+    .contact-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background-color: ghostwhite;
+      padding: 14px 18px;
+      border-radius: 12px;
+      font-size: 14px;
+      font-weight: 600;
+      text-align: left;
+    }
+    .contact-row .icon { font-size: 22px; }
+    .contact-row a { color: darkslategray; text-decoration: none; }
+    .contact-row a:hover { color: royalblue; }
+    .contact-btn {
+      display: inline-block;
+      background-color: royalblue;
+      color: white;
+      padding: 14px 36px;
+      border-radius: 30px;
+      font-weight: 700;
+      font-size: 15px;
+      text-decoration: none;
+    }
+    .contact-btn:hover { background-color: mediumblue; }
+
+    /* ---- FOOTER ---- */
+    footer {
+      background-color: darkslategray;
+      color: lightgray;
+      text-align: center;
+      padding: 22px;
+      font-size: 14px;
+    }
+    footer span { color: tomato; }
